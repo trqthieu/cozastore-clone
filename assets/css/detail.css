@@ -1,0 +1,186 @@
+
+#cart-input:checked ~ .cart-view{
+    opacity: 1;
+    transform: translateX(0);
+}
+#cart-input:checked ~ .overlay-dark{
+    display: block;
+
+}
+.cart-view{
+    width: 390px;
+    padding: 0 35px;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 2;
+    transition: transform linear 0.2s,opacity linear 0.2s;
+
+    /* display: none; */
+}
+
+.overlay-dark{
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadeIn linear 0.2s;
+    z-index: 1;
+}
+.overlay-light{
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-100%);
+    transition: transform linear .2s;
+    z-index: 1;
+}
+.cart-view-heading{
+    width: 100%;
+    padding: 15% 0px;
+}
+.cart-view-heading h2{
+    display: inline-block;
+}
+.cart-view-heading label{
+    display: inline-block;
+    float: right;
+    padding: 5px;
+}
+.cart-view-heading label:hover{
+    color:#717fe0;
+    cursor: pointer;
+}
+.cart-view-list{
+    height: 60%;
+    overflow: scroll;
+}
+
+.cart-view-list-item{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.cart-view-list-item-img{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.cart-view-list-item-info{
+    display: inline-block;
+   
+   
+}
+
+.cart-view-list-item-info-name{
+    color: #555;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.cart-view-list-item-info-money{
+    color: #888;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.cart-view-total-money{
+    color: #222;
+    padding: 40px 0;
+
+}
+
+.cart-view-footer{
+
+}
+
+.cart-view-footer-btn{
+    font-size: 16px;
+    padding: 12px 30px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+}
+.cart-view-footer-btn:hover{
+    /* background-color: #717fe0; */
+    cursor: pointer;
+   animation: color-to-violet .2s both ;
+}
+.search-view{
+    /* position: fixed; */
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 45px;
+        opacity: 0.5;
+        transform: translateY(-100%);
+        transition: transform linear .2s;
+}
+.search-view  label{
+    display: block;
+    width: 100%;
+    font-size: 26px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.search-view  label:hover{
+    cursor: pointer;
+    color: #717fe0;
+}
+.search-view div{
+    display: inline-flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+   
+}
+.search-view  i{
+    font-size: 40px;
+    display: inline-block;
+    padding: 5px;
+}
+.search-view input{
+    outline: none;
+    border: none;
+    font-size: 40px;
+    display: block;
+    color: #000;
+    padding: 25px 0;
+    width: 100%;
+}
+#search-input-header:checked ~ .search-view{
+    transform: translateY(100%);
+    opacity: 1;
+}
+#search-input-header:checked ~ .overlay-light{
+    transform: translateY(0);
+}
+
+/* .img-heart-solid{
+    display: none;
+}
+.img-heart-regular:hover{
+    display: block;
+}
+#heart-input:checked ~ .img-heart-regular{
+    display: none;
+}
+#heart-input:checked ~ .img-heart-solid{
+    display: block;
+} */
+

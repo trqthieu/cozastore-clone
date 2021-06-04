@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <title>COZA Store</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-desktop">
+            <div class="top-bar">
+                <div class="content-top-bar">
+                    <div class="left-top-bar">
+                        Free shipping for standard order over $100
+                    </div>
+                    <div class="right-top-bar">
+                        <ul>
+                            <li><a href="#">Help & FAQs</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">USD</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <div id="menu-desktop" class="menu-desktop">
+                    <div class="left-menu">
+                        <div class="name-store">
+                            COZA STORE
+                        </div>
+                        <div class="menu-desktop-content">
+                            <ul>
+                                <li class="menu-home"><a href="#">Home</a>
+                                <div class="home-sub-menu">
+                                    <ul>
+                                        <li><a href="#">Homepage 1</a></li>
+                                        <li><a href="#">Homepage 2</a></li>
+                                        <li><a href="#">Homepage 3</a></li>
+                                    </ul>
+                                </div>
+                                </li>
+                                <li><a href="#">Shop</a></li>
+                                <li class="item-menu"><a href="#">
+                                    <p class="text-features">
+                                        Features
+                                    <span class="text-hot">HOT</span>
+                                    </p>
+                                </a>
+                                    
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="right-menu">
+                        <label for="search-input-header">
+                            <i class="ti-search"></i>
+                        </label>
+                        <label for="cart-input">
+                            <i class="item-menu ti-shopping-cart">
+                                <p class="text-number">2</p>
+                            </i>
+                        </label>
+                        <input type="checkbox" hidden id="cart-input">
+                        <input type="checkbox" hidden id="search-input-header">
+                        
+                        <div class="cart-view">
+                            <div class="cart-view-heading">
+                                <h2>YOUR CART</h2>
+                                <label for="cart-input" class="ti-close"></label>
+                            </div>
+                            <div class="cart-view-list">
+                                <div class="cart-view-list-item">
+                                    <div class="cart-view-list-item-img">
+                                        <img src="https://preview.colorlib.com/theme/cozastore/images/xitem-cart-01.jpg.pagespeed.ic.OR3SDRpeNa.webp" alt="">
+                                    </div>
+                                    <div class="cart-view-list-item-info">
+                                        <p class="cart-view-list-item-info-name">White Shirt Pleat</p>
+                                        <p class="cart-view-list-item-info-money">1 x $19.00</p>
+                                    </div>
+                                </div>
+                                <div class="cart-view-list-item">
+                                    <div class="cart-view-list-item-img">
+                                        <img src="https://preview.colorlib.com/theme/cozastore/images/xitem-cart-02.jpg.pagespeed.ic.i1QzWnpTT6.webp" alt="">
+                                    </div>
+                                    <div class="cart-view-list-item-info">
+                                        <p class="cart-view-list-item-info-name">Converse All Star</p>
+                                        <p class="cart-view-list-item-info-money">1 x $39.00</p>
+                                    </div>
+                                </div>
+                                <div class="cart-view-list-item">
+                                    <div class="cart-view-list-item-img">
+                                        <img src="https://preview.colorlib.com/theme/cozastore/images/xitem-cart-03.jpg.pagespeed.ic.oMriSJvVmo.webp" alt="">
+                                    </div>
+                                    <div class="cart-view-list-item-info">
+                                        <p class="cart-view-list-item-info-name">Nixon Porter Leather</p>
+                                        <p class="cart-view-list-item-info-money">1 x $17.00</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cart-view-total-money">Total : $75.00</div>
+                            <div class="cart-view-footer">
+                                <button class="cart-view-footer-btn">VIEW CART</button>
+                                <button class="cart-view-footer-btn">CHECK OUT</button>
+                            </div>
+                        </div>
+                        <div class="search-view">
+                            <label for="search-input-header" class="ti-close" ></label>
+                            <div>
+                                <i class="ti-search"></i>
+                            <input type="text" placeholder="Search...">
+                            </div>
+                            
+                        </div>
+
+                        <!-- <input type="checkbox" id="heart-input"> -->
+                        <label for="cart-input" class="overlay-dark">
+                        </label>
+                        <!-- <label for="heart-input" class="overlay-dark">
+                        </label> -->
+                        <label for="search-input-header" class="overlay-light">
+                        </label>
+
+                        <i class="item-menu ti-heart">
+                            <p class="text-number">0</p>
+                        </i>
+                        <i id="menu-mobile-hambuger" class="menu-mobile ti-menu" onclick="myFunction()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            
+        </div>
+        
+
+    </header>
+    <div class="slider">
+        <!-- <img src="https://preview.colorlib.com/theme/cozastore/images/xslide-03.jpg.pagespeed.ic.tP-L47NU9M.webp" alt="" class="slider-img"> -->
+        <div class="slider-content">
+            <h1>Man Collection 2018</h1>
+            <p>
+        NEW ARRIVALS
+            </p>
+            <a href="#">SHOP NOW</a>
+        </div>
+    </div>
+    <div class="content-main">
+        <div class="content-banner">
+            <div class="col-third">
+                <div class="content-banner-item">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xbanner-01.jpg.pagespeed.ic.Uj5FE94mgU.webp" alt="">
+                    <div>
+                        <h1>Women</h1>
+                        <p>Spring 2018</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-third">
+                <div class="content-banner-item">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xbanner-02.jpg.pagespeed.ic.MQuZq6F18q.webp" alt="">
+                    <div>
+                        <h1>Men</h1>
+                        <p>Spring 2018</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-third">
+                <div class="content-banner-item">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xbanner-03.jpg.pagespeed.ic.1rqLomOaMb.webp" alt="">
+                    <div>
+                        <h1>Accessories</h1>
+                        <p>New Trend</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="content-product">
+            <h1>PRODUCT OVERVIEW</h1>
+            <div class="category">
+                <div class="category-left">
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Watches</a></li>
+                    </ul>
+                </div>
+
+                <div class="category-right">
+                    <label for="filter-input" class="category-right-item" >
+                        <i class="ti-close"></i>
+                        <i class="ti-filter"></i>
+                        Filter  
+                    </label> 
+
+                    <label for="search-input" class="category-right-item">
+                        <i class="ti-close"></i>
+                        <i class="ti-search"></i>Search</label>
+                </div>
+                <input type="checkbox" hidden name="check-category" id="filter-input">
+                <input type="checkbox" hidden name="check-category" id="search-input">
+                <div class="filter-category">
+                    <div class="col-fourth">
+                        <p>Sort By</p>
+                        <ul>
+                            <li><a>Default</a></li>
+                            <li><a>Popularity</a></li>
+                            <li><a>Average rating</a></li>
+                            <li><a>Newness</a></li>
+                            <li><a>Price: Low to High</a></li>
+                            <li><a>Price: High to Low</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-fourth">
+                        <p>Price</p>
+                        <ul>
+                            <li><a>All</a></li>
+                            <li><a>$0.00 - $50.00</a></li>
+                            <li><a>$50.00 - $100.00</a></li>
+                            <li><a>$100.00 - $150.00</a></li>
+                            <li><a>$150.00 - $200.00</a></li>
+                            <li><a>$200.00+</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-fourth">
+                        <p>Color</p>
+                        <ul>
+                            <li><a><i class="circle-color" style="background-color: black;"></i>Black</a></li>
+                            <li><a><i class="circle-color" style="background-color: blue;"></i>Blue</a></li>
+                            <li><a><i class="circle-color" style="background-color: grey;"></i>Grey</a></li>
+                            <li><a><i class="circle-color" style="background-color: green;"></i>Green</a></li>
+                            <li><a><i class="circle-color" style="background-color: red;"></i>Red</a></li>
+                            <li><a><i class="circle-color" style="background-color: white;"></i>White</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-fourth">
+                        <p>Tag</p>
+                        <ul>
+                            <li><a>Fashion</a></li>
+                            <li><a>LifeStyle</a></li>
+                            <li><a>Denim</a></li>
+                            <li><a>StreetStyle</a></li>
+                            <li><a>Crafts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-category">
+                    <i class="ti-search"></i>
+                    <input class="search-category-input" type="text" placeholder="Search">
+                </div>
+
+            </div>
+                
+
+            <div class="content-product-list">
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-01.jpg.pagespeed.ic.6WHvZRJRuO.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <label for="heart-input">
+                                <i class="ti-heart"></i>
+                            </label>
+                        </div>
+                            <p>$16.64</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-03.jpg.pagespeed.ic.eOHs429Gtb.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$25.50</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-04.jpg.pagespeed.ic.1MaP4euDx9.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$75.00</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-07.jpg.pagespeed.ic.wXz93SW1CF.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$52.66</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-09.jpg.pagespeed.ic._ex9y9IVR9.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$75.00</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-10.jpg.pagespeed.ic.JKjq4oUn3E.webp
+                    " alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$25.85</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-16.jpg.pagespeed.ic.AbLwZITYaU.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$29.64</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-11.jpg.pagespeed.ic.fJxJBqHZzv.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$63.16</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-06.jpg.pagespeed.ic.mU9c3gp9yp.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$93.20</p>
+                    </div>
+                </div>
+                <div class="col-fourth product-item">
+                    <div class="product-item-img">
+                    <img src="https://preview.colorlib.com/theme/cozastore/images/xproduct-05.jpg.pagespeed.ic.GHcB3Nc9zp.webp" alt="">
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-item-desc">
+                        <div>
+                            <p><a href="#">Esprit Ruffle Shirt</a>
+                            </p>
+                            <i class="ti-heart"></i>
+                        </div>
+                            <p>$34.75</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+
+            </div>
+
+            <div class="content-product-footer">
+                <a href="#">LOAD MORE</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-content-top">
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h4>CATEGORIES</h4>
+                        <ul>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <!-- <li>Women</li>
+                            <li>Men</li>
+                            <li>Shoes</li>
+                            <li>Watches</li> -->
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <!-- <li>Track Order</li>
+                            <li>Returns</li>
+                            <li>Shipping</li>
+                            <li>FAQs</li> -->
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h4>GET IN TOUCH</h4>
+                        <div class="get-in-touch-about">
+                            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+                        <div>
+                            <a class="icon-social ti-facebook"></a>
+                            <a class="icon-social ti-instagram"></a>
+                            <a class="icon-social ti-pinterest"></a>
+                        </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h4>NEWSLETTER</h4>
+                        <input class="input-email" type="text" placeholder="email@example.com">
+                        <button class="btn btn-subscribe">SUBSCRIBE</button>
+                    </div> 
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+                <div class="card-payment">
+                    <img src="data:image/webp;base64,UklGRlgEAABXRUJQVlA4TEsEAAAvIoAFELXImrbtjKRv7d0z2zy0j2zbtm3btm3btr1J99qtpD14xzP5B2Oz8Xal6qv6JEiSbdpW7r3P0/xnpG/z2rZ974El27ZpZ5y86BmxbdtO/tP/fujqHLi1batWvkT+gQLcIo8dOnDrRdvQ84mhEgpwaeDgmk2Fbds2YJLucUdwGbo7sNGWzTasS9GBnXpMBwdXZcqTb4BUi9kNXsGR5EQj/2lpzOUczbAgKiox0XdfVGASfefxBx8Z6JtJG42QCBVkegZnEmiAX3rE2+N9z/lj9523x9uRI9MzMINAETpYYoSIppBoISCSRUYyJubYrKkCKjaPWBIlLJIxrcAcI0zGj2Q6BqYRqAXT4O153P1907vbGLSGSAiJOUYuLYSALU4XMEj+58G7fd2rbcPf2xBQECCGxBgjl16kugV3Fj1fTyMAH0g6lQCogFun07Ktn1T4f6F461a//ib3WAGRGuhErcSFuKK+rsnLk35fz3X5eO1gb47TfFcKj8ULkwk1Xt+93DbgW5JOIfB/AFuU9pUuXcPFrXnElbGDFSN7Gzq3d4zor9s6mzKws+mXAFR6DLftnk0Y9PnCqvo6wNAfp1q8PTg7nTS/tG1OYcfswo5/l5rNrWWdPtzQpQjwmkzHwGQChawipEqFL+dq/zm1fzmlfOtSk/qhG4u28ZM1fdtbciyftKvsyb56pjjVrJ7Myrp5cG3d1fHtzorqutP9OfWfX2xtL3m/q1td3bC4vKXq+09nphNmFnbNKuwCfwAvyXQMTCQAHjF3/1hXtHarTvVYvdaxcct193Z1w5Yb1u5mTe8vKVa9dXbb0aRwYEBrQ4H2vQfHUe82TY1enkz9u2/M70NHuzM+nkYsLG07Ppy2ub2s28dr1xY9XT9fOzycBf544DlJJxAAnNxdQpx4eRqFOG2whFh1dD7QpbUj9+CBeyqNra0iDgztrMMB3881fXlius+BH7i6vqZQ89u1ec+Mwp5h308dGU2r/vbl2aHO+JCx4ilJxxMohsqG6ZSh0w2/YqLKSrpQenAa13u5ZfRg1djRqp2TCYBGtQN5+veErCDEaHl93YHBLO1d4XtAlUqRC0pbVtfXxNxcdVyc9yytbsKfKTLjMUnHEYBPAl1WAJmvEj4PuBwH+Ge5yzBcPp9BfDg17gA5DuJjRnz8p8gDJbg8+JuVTI9/dA+ZBPV97ldWMT79+SphBjwg6VgCwEMBRcBmk21KiZz4TXRu33Lt2qDKSom2RAVsNhsvSOQDsiwnyoocAfdJOoYAfIIPDj6juLgPefAvFcSU4UPyQRAXEecjIsLfd7S4Q9JRBH6ARGrcIulI2h54h9i38KkBnPMZhcXG+v9H2D/c5CUdg1O4wJd4DT/eIIBzFJGif7/whP90jLTmEGABkwYPcE2oEwb7cXmIx808buRBit08r+YqJ8uEMqFF6CPME5YIC0EXzQiLhFFCF6ECAA==" alt="">
+                    <img src="data:image/webp;base64,UklGRkIFAABXRUJQVlA4TDUFAAAvIoAFEFVI37btbJ/nN9u2V862bdv7ZNs2v9m2bdtbUttGmjRtn3nrf9C+kSNJsmo7OedChEzcgkKmfFoE27K1YVmf8dG9/zGdc6TZ2nZsy/HoM7Jt27Zt27brNdKvJtAE+oaUXa+f+/Fz33Br21at/MgNTd2hiJ9ycOiCVJ/gkrl1QuRQCTE16MxUFfRuwel23G/BVTLbcLsNZy0xDSgURMOJT4RkEd8SDNVGmxAekosDmYB1OWYQCAv/wUE69WcUEEYhk2GWELaYotnEFZPAVh0DAlMRDSkhwofEUuIRE9JhGoaGDwnFSFyMgTAIHCUhEo9YBMLAAsJwpFIEiYPtlc3ehfz7NoFtJ3bVjMm6ICUEyIVFCIQUpAiJEPwVDAUpyOVoFHsCEriIBAIsCYUSbMghBCsYQBiGRIqIV8QyqPcfnfvW4/ifR07/eOLy5w+8x2bsWYMcixdL1SqnzX9Z4U3p0HJ7WpPVWS/PfSDlzG6UTtsjyjzeV2zySLPhtE+lQwwSISwalmp4OKv1+oRXuZcYKQQIw5BIEVHgKvxHi7ut2/Lhs0n/3tn794xPr6sQKJacuxRwz879RJfPA4BHsp6yTClycD8BSAI5ouubyk7vA3lPz30gXM+DgASQBZ7asZsOxQKAMBSJBMECE/CEgnD1Zp0CY8rs7699+/gewvLVAuAF0d1tsaZk3XoOkND94RBn3yC+vQ4kDZ9sg8q4tu5Z7sNKg2xDH3cAORWu7gMFk4c1kM0PCEOQSBBhIE4IRijY18j/v5XhtDufeiTYGlxfBF6YNyyHhMGzXVJj51tEmqraD1eAFNnkqpVlLn+xoRASntd2edYJNW+umLhcLaMWtb45zts4QimGMBiJGBGEANjAToOqZg5LgDdml0lu9JqM+lqBMeFDNOFSRdO7M0DSzHElJNzNfVVZ3QEyQEql1R0Pcm/INX1YCTy1bJzP2ZcVXjxXdPrES+1ijYAwGIkY4QMPWMBCgyoOHsfIqEWNLi7r9HQAyBj6sAOqeadJpes7QM7mzQxIINbiW5YXEk1uAildJofoWpfo+obsh7RVm9meM8gvrwIFR48joTqEQUjECDe4wAgmCDSuD2Gpdn1L/pekotNnsh2zTh6HQcK502C5tml51imXz/1QgZe5HfoL/dBnugfI6DfZaet+vBz7nAJjCigAGYUWL2QqRQtfFkIlCAOQiBAucIIBiJkS7Co6Px0CMkBW05sz3G0DKlu1mQM8V/b2PkXraTk5AeR1fDqs/v15mUoBeGXlbobGj6eAtDYPx80al5s+rNTi8RSQ0OLxBH9bgzAAiQhhBxtoIaWl4dqSjbsZSuWHSueHdu7Hi6e/2FSyYLVY8XzXwNku5qZu/LBJnm1KplKUa5tRb3XR6e0gZ3N/ZcYHKu/vuFm7of9QyenzIKXyXS2nJ1GhQeiPpDrCAmZQQVoNRBuhL0X5liVDChBlaD5Xw6eioZOkDsmYPO+K4W7p9DDa6bnY7q/PTG+TRXGO6FNITaMJaEW+ZnwIA00Xp/RDUh1hAiMoQBDoqtGKWcJnTj4NiaYR9BGyhscYAZpGQ7Iml7OxOZKgjwhdddqIWcJjDp+KQtMIGpIlPKbwqYGDvkiqIQygBwr+SQOh4G8KiEAfJNUxpwMNfIHkvkEI+iIXY8kLCvgEyX0EhEE4yI3BG/hC4CACybBAvuKvDNqAYj6szsbDXHxMxwshZDqefxEyHa//nI2PRXgsjzVAHVABdAL6ABOAccDoH4AxgQAm/wWYAgwDugE1AA==" alt="">
+                
+                    <img src="data:image/webp;base64,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" alt="">
+                    <img src="data:image/webp;base64,UklGRgAFAABXRUJQVlA4TPMEAAAvIoAFEI2ISVOMvovof2iZqGnbgKEQ/hC77kIJoQAiEkf+L50Q+h8y/DUYsrRtOyPp/YNCMLZt2z6b/c06PHNq27aRYlJJ/d/3/1+7OzuQo22bWi3PN5lJcpKc5Ffce3dYAHuhpqKjomIHrIGKi9bdqr+TEnfiR2Y+uZFsu7bSa5/7RQ5o4eFDlGRGANjCxf//w9vLaWzbrrJ+IktU9PSApgwcXVAEmqGH0MYvAJ8t8yXpPoVt2zZSku5xB5AtfPN+duLWl2W6/1ZY1z9g4gJZdXZV6fLfAzgBVj34PD97/U+98uHLoH3sDpQSANxQZ+79Pu5zH3eAg7e/rZbd/zd4cONwF5RJgAgffrxyko/rK/XfUT59bv87+sCEJZZSANLuUVL/5+oM2RbpML4kohy2pT8IqyVeIh0cEAug0JAQMIiEDwCSUAoEKAAICoQYGgEgAAAKLFQcfhriAXAb3AUUKwwCU32J6QmBJYPYxF8PAjNjtISzhCRcGyoghHLYAEJAy3OwDvYEGfkYriX9N4p2uLYA1A0zhIAFXg5WCpjmYjGRKvvb8SRhPaGUZmDhLJox0w08jq6n6nAWMWnK/zEci1qE62Leaj3ZPdaeWCbEl0/jxfYRFQC4C+oHFAukgzU6jrlEt49XCR8W8TpZqxmuiY8hZg6juV7rA7+b0XAVuKjOovN/LDq+Fu7j8ocjzphX8ODTWLLJjDJafb3YHWEBgJvgPoSwoGVkwixwDA3Dikndz9d2P/5aANs0Xmv14yo0kFalxPM0/4ZjYs5mNfvBtmqGlzvj2Ln68juyesyp6tb2EVsAuju4G1AsQTq6m8xajClCaKjVY4OLuokFgYJAYGYcRQ4tmRQREzpEsojZFUkTTR/TFKMjj1mQBXt6geaX40E6Zn1CRVA3BgdmUlSMelfvs3VLVqZ0q1j0P7KYusRUgn0Ejj9QkZjmR9pBQlggfZAS5CT/Rt/HvI3Kh6EhyCjakSrN36HAAINI2LR4dUhWWbl+ri8v4Jv1efOmd5AjO5fYRpZXF1bbkabVnFYUM1lDaTTiCpbh68gjJqeYIf5LzJlQdBSTmmnH9a1odVCKSQAlFlotqpaU5eULAHDzqjQlwofsxtmouV8vz1f/WdRd8kBeVdCEno1ic01uw52PP2ltLiOp+exqfzE+/Ip0s3bIce9L/WqhJNgVBJsWV4tWCxQAABAJrjBZcbkkRhL6a8XZcu3y1sd6jZd1oSCc82ugbdmSj6kxdyn/91izxk2p1c3QIW6NZRzsQiRsUnpjjSTfvPEdq+s73Wm189r59U4zYwZHNI+vvtaWxxQio757rDLVhUf8SGr6PCoS/2zVFzyo618oimG3QFkgKQKwhoDi7at7N5l+OewMt+D0iZh8MqZf5vNIx7M6I12GYyK2AdCKaFS1ChMOEcDPEAkRGWqLYHcBiEBgZAGGVZY/H3lyp5QFSm1ffH9UVEfN4AtpCMcEQAKQAECBwQELIlGFqkE0jDvYXcQMSzJmkRZghO5mDR+HMHJ+DKEAKLlwdALgZ/dduIvWGyc6ACUEEmhoe3huciX1/euvs81rzrF39PwZoJTT4fb0VudRL++2fh5O3f2+33bt66LXPmVCY/w/jzwHZEACAurnz++/ZHu/lHQLNMDr8fMfG2AMVEAACSiAbNAxZkbMj1gCAvgDb+AJNEAGAA==" alt="">
+                    <img src="data:image/webp;base64,UklGRjgFAABXRUJQVlA4TCsFAAAvIoAFEI2ISVOM94zof4ieiAWT+ZN2xaMmAAHG6p/PKYEMYsFk/oDdofQ/lBPuFTbItm3bkKR9I9LObNu2bdt8sm3btm3btsps23YnIiPubeMPTsqxre3Ynn0/z/v+f2xUtpPKtmsnXUp3mU0mYM0gqYzetpMP7/tIjm1btZWx9zkXd+kRAvF6VPTc3b9z5b2z3cS27SqLnHMsqbCADCwwTwODG4REAxhIVSqp6N/7fwJAgVqztjJXiSAH/j2jyHCJA/gCe9g3INB/1vgXYZWaRQMCwMHwPwQYZHqNCBLTAIxQAfxXASO8NDQKCpmdooY/YQAEAFYQEf6MSCUDOQegwg4iVdEJRBSIZCwFICWC/ueKKQBGXgB8hh2/+QQZJMgFNABGhLVsbAeDNKUKFwqS8KxwspQZqQSj69wEWxvm/N98mPXf2U0h79PV14e33G5Sm6F70SVcbpO9hMigcvCy5abSoUqZDAEArE3EgVIQaVW/REQqHqFfF6R0teFxy/hBvNE07KRiVcn550zWhcOjHYfsvy4J1kfev7pp4sUbHo3/r49z7vYLKyFnvVeohG1NZ0rlYdOEDdkgFUebdL0O4NAiyQhG1zR1Q/JetU5KKEyveV7CvdL07wazMicDHNw7ez2xa3NhEr+kfBr12so79735TYqaEfVOj/9N/sFStpQFnY4PhBpKr3pwfOkw9o+wFS8AHARwXCllTRs8QeHE2aaMqVOLHreaVCqVvSVk/H7gwcbwesWBonevS1y0Sfv6v6y3bks7vOnb7WYN7OX4N+k9uJcVwzuT6ynMHtzpaFCiW3f8gQczFgIaKIgqiRVl2NqUeXV3vS1nmzKgnxxB7NBwrS0DG1L1w8Ky83blocvrO8+nrsLNi9L8LZ17XbM8VEp06nRvcilVQvocbFU6+K6bMnK26eRTD+e9lOLDbwAHvUL9ClEGO9RIpVLxRNIKBgBVUgiUoubO1ClSZ8c7ZmL9taO0Ez4qmBoAJQLHx4Kk6FNwdUqwuzf91G93l/+U59lLPCcBDSTwtRRFUBHSwY4zSsgghGF9hI/RFEbaEh52uZ+Rq5C28B4uvEMRJVVKvj7J3xx4NOOiNecO3JtxXcrXv2m5ExEADgFS4QdACmwIE04hOZLitWCHDguRB0WRGatggRFPlY05Ob5j/HbsypZu64kDX0dclfzdG7zqeGogCGggAn5+h8roicdwIjly4AsOoDaCuIJU8MOZeNVLdd92zgmznQcWp/efZ/l9wPntJy1PAJ5SiDiIfvEWWWGDHs8hwQAJLngRUpA0Ba3B8X6mr4ZTa845eujE41l3JXv3hr67EqkBiKeE4A8ogDcAZAj4AbAUeAGBITeOBimGGzjf/BfbnKcrM3f+SugQASBCgSkCGoh+pYJIAUBCYIElgsOOLya3g0hnottJMC5Jmt6RFR4N8DMKLGAUBDjoV0QiAiD3Mf/CrBPByyi3UrlmdTsuCLrIHZ/oYyMk4NdCkKIKoGCjqEIjZxQAKBBI7he51xj/FcO/JDV4R4XXU8rzNNxLm7t59aLco08Ll89kg5CA33IYC9KoVnvPK45nA5ZfISKwFtYWgGcCw/COHD5M4s2ExZsJq5eTT+0+/9z73m1cY6v+MeczkIQA/KFJeda94eXtuKr8OrIdxs7C2Ee+ZEi/qQN4Rw2fxw8fx+99nMCniXwZe4tan6fvziw//zEYWCQWg5CAP5WyIkwp/poz5BAUXnPpywZMQRH4LSTgr0EhpHT3EZ7NQBMA" alt="">
+
+                
+
+                
+                </div>
+                <p>Copyright ©2021 All rights reserved | This template is made with <i class="ti-heart"></i>by Thieu</p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script src="./logic.js"></script>
+</body>
+</html>
